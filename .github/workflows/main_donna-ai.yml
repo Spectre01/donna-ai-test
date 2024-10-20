@@ -31,6 +31,21 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Adjust this to the version required for your React app
+
+      - name: Install npm dependencies
+        run: |
+          cd clientapp
+          npm install
+
+      - name: Build React app
+        run: |
+          cd clientapp
+          npm run build  # This will create the static build in the "frontend/build" folder
 
       - name: Collect Static files
         run: python manage.py collectstatic --noinput
