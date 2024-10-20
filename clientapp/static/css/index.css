@@ -1,0 +1,8 @@
+.textarea-style {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: both;
+    min-height: 200px;
+  }

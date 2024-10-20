@@ -10,21 +10,14 @@ const LongInputComponent = () => {
 
   return (
     <div>
-      <h2>Enter Long Input</h2>
+      <h2>How may I assist you?</h2>
       <textarea
+        className="textarea-style"
         rows="10"  // Set a minimum height (can be changed)
         cols="50"  // Set a width (can be changed)
         value={inputText}
         onChange={handleInputChange}
         placeholder="Type something here..."
-        style={{
-          width: '100%',  // Full-width
-          padding: '10px',
-          border: '1px solid #ccc',
-          borderRadius: '4px',
-          resize: 'both',  // Allow resizing
-          minHeight: '200px',  // Minimum height to start with
-        }}
       />
       <p>Character Count: {inputText.length}</p>
     </div>

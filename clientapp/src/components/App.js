@@ -10,7 +10,7 @@ export default class App extends Component {
   render() {
     return (
         <div>
-      <h1>Donna React</h1>
+      <h1>DevOps War Room</h1>
       <LongInputComponent/>
       </div>
     );
